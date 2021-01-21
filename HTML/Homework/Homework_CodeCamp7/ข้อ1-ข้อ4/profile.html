@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="page.css">
+    <style>
+        div.gallery {
+            margin: 2px;
+            border: 1px solid gray;
+            float: left;
+            width: 110px;
+        }
+        div.gallery:hover {
+            border: 1px solid black;
+        }
+        div.gallery img {
+            width: 100px;
+            height: auto;
+        }
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="page"></div>
+
+    <div class="head">
+        <div>
+            <h1>Profile</h1>
+        </div>
+    </div>
+
+    <div style="margin-top:50px; text-align: center;">
+        <img style="width: 150px; height: 200px; border: 10px solid #82E0AA;" 
+        src="./img/MyPic.jpg" alt="Mr.Pat">
+    </div>
+
+    <div style="display: flex;margin-top:50px; justify-content: center;">
+        <div style="width: 350px;height: 250px; border: 10px solid #82E0AA; 
+        background-color: white;padding: 20px;">
+            <p><strong>ชื่อ-นามสกุล : </strong>พรรษ  บุญครองสุข</p>
+            <p><strong>ชื่อเล่น : </strong>พัด</p>
+            <p><strong>ชื่อกลุ่ม : </strong>CodeCamp</p>
+            <p>
+                <strong>ภูมิลำเนา :</strong> <br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                25/12 ซอยหมู่บ้านเอกไพลิน ถ.ศรีนครินทร์ ต.บางแก้ว อ.บางพลี
+                สมุทรปราการ 10540
+            </p>
+            <p><strong>ความถนัด : </strong>คณิตศาสตร์,ฟิสิกส์</p>
+        </div>
+    </div>
+
+    <div style="display: flex;margin-top:20px; justify-content: center;">
+        <div style="width: 350px;height: 250px; border: 10px solid #82E0AA; 
+        background-color: white;padding: 20px;">
+            <p><strong>งานอดิเรก : </strong></p>
+            <div class="gallery">
+                <a target="_bank" href="./img/boxing.jpg">
+                <img src="./img/boxing.jpg" alt="boxing">
+                </a>
+                <div class="desc">ซ้อมมวย</div>
+            </div>
+            <div class="gallery">
+                <a target="_bank" href="./img/Drawing.jpg">
+                <img src="./img/Drawing.jpg" alt="drawing">
+                </a>
+                <div class="desc">วาดรูป</div>
+            </div>
+            <div class="gallery">
+                <a target="_bank" href="./img/Alto fiddle.jpg">
+                <img src="./img/Alto fiddle.jpg" alt="Alto fiddle">
+            </a>                
+                <div class="desc">ซ้อมดนตรี</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="margin-top: 50px; text-align: center;">
+        <span>
+            <a class="page" href="./friends.html">Friends</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="page" href="./index.html">Homepage</a>
+        </span>
+    </div>
+
+</body>
+</html>

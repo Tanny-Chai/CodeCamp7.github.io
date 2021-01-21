@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <style>
+
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+            width: 1000px;
+        }
+        .flex-container > div {
+            width: auto;
+            margin: 10px;
+            line-height: 75px;
+        }
+
+        .flex-container-row {
+            display: flex;
+            align-items: stretch;
+        }
+        .flex-container-row1 > div {
+            background-color: white;
+            text-align: left;
+        }
+
+        .choice {
+            font-size: 30px;
+            border:1px solid darkgray;
+        }
+    </style>
+</head>
+<body>
+    <form>
+    <div style="display:flex;justify-content:center;">
+    <div class="flex-container">
+        <div class="flex-container-row">
+            <div style="flex-grow: 1;">
+        <label style="font-size: 30px;" for="fly from">Flying from</label><br>
+        <select class="choice" name="fly from" id="fly from">
+            <option value="blank"></option>
+            <option value="Suvarnabhumi">Suvarnabhumi</option>
+            <option value="Donmueang">Donmueang</option>
+            <option value="Phuket">Phuket</option>
+            <option value="Utapao">Utapao</option>
+            <option value="Chiang Mai">Chiang Mai</option>
+            <option value="Chiang Rai">Chiang Rai</option>
+            <option value="Samui">Samui</option>
+            <option value="Hat Yai">Hat Yai</option>
+            <option value="Udon Thani">Udon Thani</option>
+            <option value="Phitsanulok">Phitsanulok</option>
+        </select>
+            </div>
+            <div style="flex-grow: 1;">
+            <label style="font-size: 30px;" for="fly from">Flying to</label><br>
+            <select class="choice" name="fly from" id="fly from">
+                <option value="blank"></option>
+                <option value="Suvarnabhumi">Suvarnabhumi</option>
+                <option value="Donmueang">Donmueang</option>
+                <option value="Phuket">Phuket</option>
+                <option value="Utapao">Utapao</option>
+                <option value="Chiang Mai">Chiang Mai</option>
+                <option value="Chiang Rai">Chiang Rai</option>
+                <option value="Samui">Samui</option>
+                <option value="Hat Yai">Hat Yai</option>
+                <option value="Udon Thani">Udon Thani</option>
+                <option value="Phitsanulok">Phitsanulok</option>
+            </select>
+            </div>
+        </div>
+        <div class="flex-container-row">
+            <div style="flex-grow: 1;">
+                <label style="font-size: 30px;" for="Departing">Departing</label><br>
+                <input class="choice" type="date" id="Departing" name="Departing">
+
+            </div>
+            <div style="flex-grow: 1;">
+                <label style="font-size: 30px;" for="Returning">Returning</label><br>
+                <input class="choice" type="date" id=Returning name="Returnging">
+            </div>
+        </div>
+        <div class="flex-container-row">
+            <div style="flex-grow: 1;">
+                <label style="font-size: 30px;" for="Adult">Adult</label><br>
+                <input class="choice" type="number" id="Adult" name="Adult" min="1" max="9">
+            </div>
+            <div style="flex-grow: 1;">
+                <label style="font-size: 30px;" for="Child">Child</label><br>
+                <input class="choice" type="number" id="Child" name="Child" min="1" max="9">
+            </div>
+            <div style="flex-grow: 1;">
+                <label style="font-size: 30px;" for="Infant">Infant</label><br>
+                <input class="choice" type="number" id="Infant" name="Infant" min="1" max="5">
+            </div>
+            <div style="flex-grow: 1;">
+                <label style="font-size: 30px;" for="Currency">Cerrency</label><br>
+                <select class="choice" name="Currency" id="Currency">
+                    <option value="blank"></option>
+                    <option value="THB">THB</option>
+                    <option value="AUD">AUD</option>
+                    <option value="CAD">CAD</option>
+                    <option value="HKD">HKD</option>
+                    <option value="SGD">SGD</option>
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="JPY">JPY</option>
+                    <option value="LAK">LAK</option>
+                    <option value="KRW">KRW</option>
+                    <option value="GBP">GBP</option>
+                    <option value="NZD">NZD</option>
+                    <option value="CHF">CHF</option>
+                    <option value="DKK">DKK</option>
+                    <option value="SEK">SEK</option>
+                    <option value="INR">INR</option>
+                </select>
+            </div>
+        </div>
+        <div>
+            <input style="background-color: orange; height: 50px; width: 150px;
+            text-align: center; font-size: 30px;"
+             type="submit" value="Search">
+        </div>
+    </div>
+    </div>
+</form>
+</body>
+</html>
